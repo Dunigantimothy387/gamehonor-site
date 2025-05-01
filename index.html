@@ -6,85 +6,97 @@
     <title>Honor The Game LLC</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://images.unsplash.com/photo-1604152135912-04a022e23688?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-        }
-        .overlay {
-            background: rgba(255, 255, 255, 0.7);
-            min-height: 100vh;
-            padding: 0;
-        }
-        .header {
-            background: rgba(0, 0, 0, 0.8);
+            background: #0d0d0d;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #fff;
-            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #1e1e2f, #3e3e55);
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ff6a00, #ee0979);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #ccc;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .hero a {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #ff6a00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .hero a:hover {
+            background: #ee0979;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
             text-align: center;
         }
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 30px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 10px;
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
         }
-        h1, h2 {
-            color: #222;
-        }
-        p {
-            line-height: 1.6;
+        .content p, .content ul {
             font-size: 1.1em;
-        }
-        .services, .about, .contact {
-            margin-top: 40px;
+            color: #bbb;
+            line-height: 1.6;
         }
         footer {
+            margin-top: auto;
             text-align: center;
-            padding: 15px;
-            background: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            margin-top: 40px;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #777;
         }
     </style>
 </head>
 <body>
-    <div class="overlay">
-        <div class="header">
-            <h1>Honor The Game LLC</h1>
-        </div>
-
-        <div class="container">
-            <div class="about">
-                <h2>About Us</h2>
-                <p>Honor The Game LLC is a leading men's clothing retailer based in Gilbert, Arizona. Our company specializes in premium-quality sportswear and casual clothing designed for athletes and active individuals. With a focus on performance, durability, and style, we are dedicated to helping you stay at the top of your game both on and off the field.</p>
-            </div>
-
-            <div class="services">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Men's Sportswear & Apparel</li>
-                    <li>Custom Team Uniforms</li>
-                    <li>Activewear Collections</li>
-                    <li>Online Shopping & Delivery</li>
-                    <li>Customer Support & Styling Advice</li>
-                </ul>
-            </div>
-
-            <div class="contact">
-                <h2>Contact Us</h2>
-                <p>Address: 5966 S Shelby Way, Gilbert, AZ 85298, USA</p>
-                <p>Email: <a href="mailto:timothy@honorthegamellc.us">timothy@honorthegamellc.us</a></p>
-                <p>Phone: +1 (480) 123-4567</p>
-            </div>
-        </div>
-
-        <footer>
-            &copy; 2025 Honor The Game LLC. All rights reserved.
-        </footer>
+    <div class="hero">
+        <h1>Design Your Game with Style</h1>
+        <p>Empower your performance with Honor The Game LLC’s premium sportswear. We blend functionality with style to keep athletes and teams at their best, on and off the field.</p>
+        <a href="#contact">Get in Touch</a>
     </div>
+
+    <div class="content">
+        <h2>About Us</h2>
+        <p>Honor The Game LLC is a men's clothing retailer based in Gilbert, Arizona. We specialize in top-quality sportswear and custom uniforms for athletes and active individuals. Our mission is to deliver products that meet the highest standards of performance and style.</p>
+
+        <h2>Our Services</h2>
+        <ul>
+            <li>Premium Men's Sportswear & Apparel</li>
+            <li>Custom Team Uniforms</li>
+            <li>Activewear Collections</li>
+            <li>Online Shopping & Fast Delivery</li>
+            <li>Customer Support & Styling Advice</li>
+        </ul>
+
+        <h2 id="contact">Contact Us</h2>
+        <p>Address: 5966 S Shelby Way, Gilbert, AZ 85298, USA</p>
+        <p>Email: <a href="mailto:timothy@honorthegamellc.us" style="color:#ff6a00;">timothy@honorthegamellc.us</a></p>
+        <p>Phone: +1 (480) 123-4567</p>
+    </div>
+
+    <footer>
+        &copy; 2025 Honor The Game LLC. All rights reserved.
+    </footer>
 </body>
 </html>
