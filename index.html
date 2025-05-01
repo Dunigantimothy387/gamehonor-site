@@ -9,8 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
+            background: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
+        }
+        .overlay {
+            background: rgba(255, 255, 255, 0.85);
+            min-height: 100vh;
+            padding: 0;
         }
         .header {
             background: #222;
@@ -46,37 +52,39 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Honor The Game LLC</h1>
+    <div class="overlay">
+        <div class="header">
+            <h1>Honor The Game LLC</h1>
+        </div>
+
+        <div class="container">
+            <div class="about">
+                <h2>About Us</h2>
+                <p>Honor The Game LLC is a leading men's clothing retailer based in Gilbert, Arizona. Our company specializes in premium-quality sportswear and casual clothing designed for athletes and active individuals. With a focus on performance, durability, and style, we are dedicated to helping you stay at the top of your game both on and off the field.</p>
+            </div>
+
+            <div class="services">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Men's Sportswear & Apparel</li>
+                    <li>Custom Team Uniforms</li>
+                    <li>Activewear Collections</li>
+                    <li>Online Shopping & Delivery</li>
+                    <li>Customer Support & Styling Advice</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p>Address: 5966 S Shelby Way, Gilbert, AZ 85298, USA</p>
+                <p>Email: <a href="mailto:timothy@honorthegamellc.us">timothy@honorthegamellc.us</a></p>
+                <p>Phone: +1 (480) 123-4567</p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2025 Honor The Game LLC. All rights reserved.
+        </footer>
     </div>
-
-    <div class="container">
-        <div class="about">
-            <h2>About Us</h2>
-            <p>Honor The Game LLC is a leading men's clothing retailer based in Gilbert, Arizona. Our company specializes in premium-quality sportswear and casual clothing designed for athletes and active individuals. With a focus on performance, durability, and style, we are dedicated to helping you stay at the top of your game both on and off the field.</p>
-        </div>
-
-        <div class="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Men's Sportswear & Apparel</li>
-                <li>Custom Team Uniforms</li>
-                <li>Activewear Collections</li>
-                <li>Online Shopping & Delivery</li>
-                <li>Customer Support & Styling Advice</li>
-            </ul>
-        </div>
-
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>Address: 5966 S Shelby Way, Gilbert, AZ 85298, USA</p>
-            <p>Email: <a href="mailto:timothy@honorthegamellc.us">timothy@honorthegamellc.us</a></p>
-            <p>Phone: +1 (480) 123-4567</p>
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2025 Honor The Game LLC. All rights reserved.
-    </footer>
 </body>
 </html>
